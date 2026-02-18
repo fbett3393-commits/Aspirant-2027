@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,65 +10,68 @@
     * {margin:0; padding:0; box-sizing:border-box;}
     body {font-family: 'Open Sans', sans-serif; line-height:1.6; color:#333; scroll-behavior:smooth;}
     a {text-decoration:none; color:inherit;}
-    .container {max-width:1100px; margin:auto; padding:0 20px;}header {position:sticky; top:0; background:#004d00; color:#fff; z-index:999;}
-nav {display:flex; justify-content:space-between; align-items:center; padding:15px 0;}
-nav .logo img {height:50px; border-radius:50%; border:2px solid #00b300;}
-nav ul {list-style:none; display:flex;}
-nav ul li {margin-left:20px;}
-nav ul li a {font-weight:600; transition:0.3s;}
-nav ul li a:hover {color:#00b300;}
+    .container {max-width:1100px; margin:auto; padding:0 20px;}
 
-.hero {position:relative; background:url('images/1771395508551.jpg') no-repeat center/cover; color:#fff; text-align:center; padding:150px 20px;}
-.hero::after {content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);}
-.hero-content {position:relative; z-index:1;}
-.hero-content img {width:150px; border-radius:50%; border:3px solid #00b300; margin-bottom:20px;}
-.hero h1 {font-size:3em; margin-bottom:20px;}
-.hero p {font-size:1.2em; margin-bottom:30px;}
-.hero a {background:#00b300; color:#fff; padding:15px 30px; border-radius:5px; font-weight:600; transition:0.3s;}
-.hero a:hover {background:#009900;}
+    header {position:sticky; top:0; background:#004d00; color:#fff; z-index:999;}
+    nav {display:flex; justify-content:space-between; align-items:center; padding:15px 0;}
+    nav .logo img {height:50px; border-radius:50%; border:2px solid #00b300;}
+    nav ul {list-style:none; display:flex;}
+    nav ul li {margin-left:20px;}
+    nav ul li a {font-weight:600; transition:0.3s;}
+    nav ul li a:hover {color:#00b300;}
 
-.about {display:flex; flex-wrap:wrap; gap:40px; padding:60px 0;}
-.about img {flex:1 1 300px; border-radius:15px; border:3px solid #00b300; max-width:100%; height:auto;}
-.about .text {flex:2 1 500px;}
-.about ul {margin-top:20px; list-style:disc; padding-left:20px;}
+    .hero {position:relative; background:url('1771395508551.jpg') no-repeat center/cover; color:#fff; text-align:center; padding:150px 20px;}
+    .hero::after {content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);}
+    .hero-content {position:relative; z-index:1;}
+    .hero-content img {width:150px; border-radius:50%; border:3px solid #00b300; margin-bottom:20px;}
+    .hero h1 {font-size:3em; margin-bottom:20px;}
+    .hero p {font-size:1.2em; margin-bottom:30px;}
+    .hero a {background:#00b300; color:#fff; padding:15px 30px; border-radius:5px; font-weight:600; transition:0.3s;}
+    .hero a:hover {background:#009900;}
 
-.manifesto {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; margin-top:20px;}
-.manifesto div {background:#e6ffe6; padding:20px; border-radius:10px; text-align:center; font-weight:600; transition:0.3s;}
-.manifesto div:hover {transform:translateY(-5px); box-shadow:0 4px 15px rgba(0,0,0,0.2);}
+    .about {display:flex; flex-wrap:wrap; gap:40px; padding:60px 0;}
+    .about img {flex:1 1 300px; border-radius:15px; border:3px solid #00b300; max-width:100%; height:auto;}
+    .about .text {flex:2 1 500px;}
+    .about ul {margin-top:20px; list-style:disc; padding-left:20px;}
 
-.priorities {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
-.priority {background:#f2f2f2; padding:20px; border-radius:10px; text-align:center; transition:0.3s;}
-.priority:hover {transform:translateY(-5px); box-shadow:0 4px 10px rgba(0,0,0,0.15);}
+    .manifesto {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; margin-top:20px;}
+    .manifesto div {background:#e6ffe6; padding:20px; border-radius:10px; text-align:center; font-weight:600; transition:0.3s;}
+    .manifesto div:hover {transform:translateY(-5px); box-shadow:0 4px 15px rgba(0,0,0,0.2);}
 
-.gallery {display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px; margin-top:40px;}
-.gallery img {width:100%; border-radius:10px; transition:0.3s;}
-.gallery img:hover {transform:scale(1.05);}
+    .priorities {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
+    .priority {background:#f2f2f2; padding:20px; border-radius:10px; text-align:center; transition:0.3s;}
+    .priority:hover {transform:translateY(-5px); box-shadow:0 4px 10px rgba(0,0,0,0.15);}
 
-.testimonials {padding:60px 0; background:#f9f9f9;}
-.testimonial {text-align:center; padding:20px; margin:10px; border-radius:10px; background:#fff; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+    .gallery {display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px; margin-top:40px;}
+    .gallery img {width:100%; border-radius:10px; transition:0.3s;}
+    .gallery img:hover {transform:scale(1.05);}
 
-.counters {display:flex; flex-wrap:wrap; justify-content:space-around; text-align:center; padding:60px 0; background:#e6ffe6;}
-.counter {margin:20px; font-size:2em; font-weight:700;}
+    .testimonials {padding:60px 0; background:#f9f9f9;}
+    .testimonial {text-align:center; padding:20px; margin:10px; border-radius:10px; background:#fff; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
 
-.engage {text-align:center; padding:60px 20px;}
-.engage input, .engage textarea {padding:10px; margin:10px 0; width:80%; max-width:400px; border:1px solid #ccc; border-radius:5px;}
-.engage button {padding:12px 30px; background:#00b300; color:#fff; border:none; border-radius:5px; font-weight:600; cursor:pointer; transition:0.3s;}
-.engage button:hover {background:#009900;}
+    .counters {display:flex; flex-wrap:wrap; justify-content:space-around; text-align:center; padding:60px 0; background:#e6ffe6;}
+    .counter {margin:20px; font-size:2em; font-weight:700;}
 
-.contact {display:flex; flex-wrap:wrap; gap:40px; padding:60px 0;}
-.contact-info, .contact-form {flex:1 1 400px;}
+    .engage {text-align:center; padding:60px 20px;}
+    .engage input, .engage textarea {padding:10px; margin:10px 0; width:80%; max-width:400px; border:1px solid #ccc; border-radius:5px;}
+    .engage button {padding:12px 30px; background:#00b300; color:#fff; border:none; border-radius:5px; font-weight:600; cursor:pointer; transition:0.3s;}
+    .engage button:hover {background:#009900;}
 
-footer {background:#004d00; color:#fff; text-align:center; padding:20px;}
+    .contact {display:flex; flex-wrap:wrap; gap:40px; padding:60px 0;}
+    .contact-info, .contact-form {flex:1 1 400px;}
 
-@media(max-width:768px){.about,.contact{flex-direction:column;}}
+    footer {background:#004d00; color:#fff; text-align:center; padding:20px;}
 
+    @media(max-width:768px){.about,.contact{flex-direction:column;}}
   </style>
 </head>
-<body>  <header>
+<body>
+
+  <header>
     <div class="container">
       <nav>
         <div class="logo">
-          <img src="images/1771395508551.jpg" alt="Hon. Duncan Kipngeno Rono">
+          <img src="1771395508551.jpg" alt="Hon. Duncan Kipngeno Rono">
         </div>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -78,16 +82,20 @@ footer {background:#004d00; color:#fff; text-align:center; padding:20px;}
         </ul>
       </nav>
     </div>
-  </header>  <section class="hero" id="home">
+  </header>
+
+  <section class="hero" id="home">
     <div class="hero-content">
-      <img src="images/1771395508551.jpg" alt="Hon. Duncan Kipngeno Rono">
+      <img src="1771395508551.jpg" alt="Hon. Duncan Kipngeno Rono">
       <h1>Shaping a United & Prosperous Kiptagich Ward</h1>
       <p>Join Hon. Duncan Kipngeno Rono in his 2027 aspirant journey</p>
       <a href="#contact">Get Involved</a>
     </div>
-  </section>  <section class="about" id="about">
+  </section>
+
+  <section class="about" id="about">
     <div class="container">
-      <img src="images/1771395508551.jpg" alt="Hon. Duncan Kipngeno Rono">
+      <img src="1771395508551.jpg" alt="Hon. Duncan Kipngeno Rono">
       <div class="text">
         <h2>About Hon. Duncan Kipngeno Rono</h2>
         <p>Hon. Duncan Kipngeno Rono is a dedicated leader from Kiptagich Ward with a strong commitment to community development, youth empowerment, and transparent leadership. He is aspiring to serve as MCA in 2027 to bring positive change to the ward.</p>
@@ -98,7 +106,9 @@ footer {background:#004d00; color:#fff; text-align:center; padding:20px;}
         </ul>
       </div>
     </div>
-  </section>  <section id="vision" class="container">
+  </section>
+
+  <section id="vision" class="container">
     <h2 style="text-align:center; margin-bottom:20px;">Vision & Manifesto</h2>
     <p style="text-align:center; margin-bottom:30px;">“A united, empowered, and prosperous Kiptagich Ward by 2027.”</p>
     <div class="manifesto">
@@ -108,7 +118,9 @@ footer {background:#004d00; color:#fff; text-align:center; padding:20px;}
       <div><i class="fa-solid fa-people-group"></i><br>Youth & Women Empowerment</div>
       <div><i class="fa-solid fa-seedling"></i><br>Agriculture & Environment</div>
     </div>
-  </section>  <section id="priorities" class="container">
+  </section>
+
+  <section id="priorities" class="container">
     <h2 style="text-align:center; margin-bottom:30px;">Key Priorities</h2>
     <div class="priorities">
       <div class="priority">Roads & Bridges<br>Improve connectivity and transport</div>
@@ -117,28 +129,38 @@ footer {background:#004d00; color:#fff; text-align:center; padding:20px;}
       <div class="priority">Youth & Women Initiatives<br>Skills training & empowerment programs</div>
       <div class="priority">Community Projects<br>Engage citizens in local development</div>
     </div>
-  </section>  <section class="gallery container">
+  </section>
+
+  <section class="gallery container">
     <h2 style="text-align:center; margin-bottom:30px;">Community Gallery</h2>
-    <img src="images/1771395508551.jpg" alt="Event 1">
-    <img src="images/1771395508551.jpg" alt="Event 2">
-    <img src="images/1771395508551.jpg" alt="Event 3">
-    <img src="images/1771395508551.jpg" alt="Event 4">
-  </section>  <section class="testimonials container">
+    <img src="1771395508551.jpg" alt="Event 1">
+    <img src="1771395508551.jpg" alt="Event 2">
+    <img src="1771395508551.jpg" alt="Event 3">
+    <img src="1771395508551.jpg" alt="Event 4">
+  </section>
+
+  <section class="testimonials container">
     <h2 style="text-align:center; margin-bottom:30px;">What People Say</h2>
     <div class="testimonial">“Duncan listens to our needs and works for Kiptagich!” – Resident</div>
     <div class="testimonial">“A true leader with vision and commitment.” – Community Leader</div>
-  </section>  <section class="counters">
+  </section>
+
+  <section class="counters">
     <div class="counter">Projects Completed: 25+</div>
     <div class="counter">People Helped: 5000+</div>
     <div class="counter">Schools Supported: 10+</div>
-  </section>  <section class="engage">
+  </section>
+
+  <section class="engage">
     <h2>Join Our Campaign</h2>
     <p>Subscribe to updates or volunteer to support our 2027 vision.</p>
     <input type="text" placeholder="Your Name"><br>
     <input type="email" placeholder="Your Email"><br>
     <textarea placeholder="Your Message"></textarea><br>
     <button>Submit</button>
-  </section>  <section id="contact" class="contact container">
+  </section>
+
+  <section id="contact" class="contact container">
     <div class="contact-info">
       <h2>Contact & Support</h2>
       <p>📞 Phone: [Insert]</p>
@@ -152,7 +174,11 @@ footer {background:#004d00; color:#fff; text-align:center; padding:20px;}
       <textarea placeholder="Your Message"></textarea><br>
       <button>Send Message</button>
     </div>
-  </section>  <footer>
+  </section>
+
+  <footer>
     <p>© 2026 Hon. Duncan Kipngeno Rono – Aspirant 2027 | Kiptagich Ward</p>
-  </footer></body>
+  </footer>
+
+</body>
   </html>
