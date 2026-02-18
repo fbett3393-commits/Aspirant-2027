@@ -64,6 +64,37 @@
     footer {background:#004d00; color:#fff; text-align:center; padding:20px;}
 
     @media(max-width:768px){.about,.contact{flex-direction:column;}}
+
+    /* Floating Social Media Icons */
+    .social-icons {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 999;
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background: #00b300;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 24px;
+      transition: transform 0.3s;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .social-icons a:hover {
+      transform: translateY(-5px) scale(1.1);
+      background: #009900;
+    }
   </style>
 </head>
 <body>
@@ -183,7 +214,7 @@
   <section id="contact" class="contact container">
     <div class="contact-info">
       <h2>Contact & Support</h2>
-      <p>📞 Phone: Details coming soon</p>
+      <p>📞 Phone: 0702171653</p>
       <p>📧 Email: Details coming soon</p>
       <p>📍 Office: Kiptagich Ward</p>
     </div>
@@ -200,5 +231,18 @@
     <p>© 2026 Hon. Duncan Kipngeno Rono – Aspirant 2027 | Kiptagich Ward</p>
   </footer>
 
+  <!-- Floating Social Media Icons -->
+  <div class="social-icons">
+    <a href="https://www.facebook.com/profile.php?id=61578803543223" target="_blank" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.tiktok.com/@honduncankipngenorono?_r=1&_t=ZS-941MgF5L0BY" target="_blank" title="TikTok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://wa.me/254702171653" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
 </body>
-  </html>
+             </html>
