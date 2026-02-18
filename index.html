@@ -1,87 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hon. Duncan Kipngeno Rono | Aspirant 2027</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    /* General Styles */
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
-    body { line-height: 1.6; color: #333; }
-    a { text-decoration: none; color: inherit; }
-    section { padding: 60px 20px; }
-    .container { max-width: 1100px; margin: auto; }
+    /* General */
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family: 'Open Sans', sans-serif; line-height:1.6; color:#333; scroll-behavior:smooth;}
+    a {text-decoration:none; color:inherit;}
+    .container {max-width:1100px; margin:auto; padding:0 20px;}/* Navbar */
+header {position:sticky; top:0; background:#004d00; color:#fff; z-index:999;}
+nav {display:flex; justify-content:space-between; align-items:center; padding:15px 0;}
+nav .logo {font-family:'Montserrat', sans-serif; font-size:1.5em; font-weight:700;}
+nav ul {list-style:none; display:flex;}
+nav ul li {margin-left:20px;}
+nav ul li a {font-weight:600; transition:0.3s;}
+nav ul li a:hover {color:#00b300;}
 
-    /* Header / Navbar */
-    header { background: #004d00; color: #fff; padding: 20px 0; }
-    nav { display: flex; justify-content: space-between; align-items: center; }
-    nav a { margin-left: 20px; color: #fff; font-weight: 600; }
-    .logo { font-size: 1.5em; font-weight: 700; }
+/* Hero */
+.hero {position:relative; background:url('https://via.placeholder.com/1500x600') no-repeat center/cover; color:#fff; text-align:center; padding:150px 20px;}
+.hero::after {content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);}
+.hero-content {position:relative; z-index:1;}
+.hero h1 {font-size:3em; margin-bottom:20px;}
+.hero p {font-size:1.2em; margin-bottom:30px;}
+.hero a {background:#00b300; color:#fff; padding:15px 30px; border-radius:5px; font-weight:600; transition:0.3s;}
+.hero a:hover {background:#009900;}
 
-    /* Hero Section */
-    .hero { background: url('https://via.placeholder.com/1500x500') no-repeat center/cover; color: #fff; text-align: center; padding: 150px 20px; }
-    .hero h1 { font-size: 3em; margin-bottom: 20px; }
-    .hero p { font-size: 1.2em; margin-bottom: 30px; }
-    .hero a { background: #00b300; color: #fff; padding: 15px 30px; border-radius: 5px; font-weight: 600; }
+/* About */
+.about {display:flex; flex-wrap:wrap; gap:40px; padding:60px 0;}
+.about img {flex:1 1 300px; border-radius:10px;}
+.about .text {flex:2 1 500px;}
+.about ul {margin-top:20px; list-style:disc; padding-left:20px;}
 
-    /* About Section */
-    .about { display: flex; flex-wrap: wrap; align-items: center; gap: 40px; }
-    .about img { flex: 1 1 300px; border-radius: 10px; }
-    .about .text { flex: 2 1 500px; }
+/* Vision/Manifesto */
+.manifesto {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; margin-top:20px;}
+.manifesto div {background:#e6ffe6; padding:20px; border-radius:10px; text-align:center; font-weight:600; transition:0.3s;}
+.manifesto div:hover {transform:translateY(-5px); box-shadow:0 4px 15px rgba(0,0,0,0.2);}
 
-    /* Vision / Manifesto */
-    .manifesto { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
-    .manifesto div { background: #e6ffe6; padding: 20px; border-radius: 10px; text-align: center; font-weight: 600; }
+/* Priorities */
+.priorities {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
+.priority {background:#f2f2f2; padding:20px; border-radius:10px; text-align:center; transition:0.3s;}
+.priority:hover {transform:translateY(-5px); box-shadow:0 4px 10px rgba(0,0,0,0.15);}
 
-    /* Priorities */
-    .priorities { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .priority { background: #f2f2f2; padding: 20px; border-radius: 10px; text-align: center; }
+/* Gallery */
+.gallery {display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px; margin-top:40px;}
+.gallery img {width:100%; border-radius:10px; transition:0.3s;}
+.gallery img:hover {transform:scale(1.05);}
 
-    /* Community Engagement */
-    .engage { text-align: center; }
-    .engage input, .engage textarea { padding: 10px; margin: 10px 0; width: 80%; max-width: 400px; border: 1px solid #ccc; border-radius: 5px; }
-    .engage button { padding: 12px 30px; background: #00b300; color: #fff; border: none; border-radius: 5px; font-weight: 600; cursor: pointer; }
+/* Testimonials */
+.testimonials {padding:60px 0; background:#f9f9f9;}
+.testimonial {text-align:center; padding:20px; margin:10px; border-radius:10px; background:#fff; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
 
-    /* Contact Section */
-    .contact { display: flex; flex-wrap: wrap; gap: 40px; }
-    .contact-info { flex: 1 1 300px; }
-    .contact-form { flex: 1 1 400px; }
+/* Counters */
+.counters {display:flex; flex-wrap:wrap; justify-content:space-around; text-align:center; padding:60px 0; background:#e6ffe6;}
+.counter {margin:20px; font-size:2em; font-weight:700;}
 
-    /* Footer */
-    footer { background: #004d00; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+/* Community Engagement */
+.engage {text-align:center; padding:60px 20px;}
+.engage input, .engage textarea {padding:10px; margin:10px 0; width:80%; max-width:400px; border:1px solid #ccc; border-radius:5px;}
+.engage button {padding:12px 30px; background:#00b300; color:#fff; border:none; border-radius:5px; font-weight:600; cursor:pointer; transition:0.3s;}
+.engage button:hover {background:#009900;}
 
-    /* Responsive */
-    @media(max-width:768px){ .about { flex-direction: column; } .contact { flex-direction: column; } }
+/* Contact */
+.contact {display:flex; flex-wrap:wrap; gap:40px; padding:60px 0;}
+.contact-info, .contact-form {flex:1 1 400px;}
+
+/* Footer */
+footer {background:#004d00; color:#fff; text-align:center; padding:20px;}
+
+/* Responsive */
+@media(max-width:768px){.about,.contact{flex-direction:column;}}
+
   </style>
 </head>
-<body>
-
-  <!-- Header / Navbar -->
-  <header>
+<body>  <!-- Header -->  <header>
     <div class="container">
       <nav>
         <div class="logo">Duncan Kipngeno Rono</div>
-        <div>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#vision">Vision</a>
-          <a href="#priorities">Priorities</a>
-          <a href="#contact">Contact</a>
-        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#vision">Vision</a></li>
+          <li><a href="#priorities">Priorities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <h1>Shaping a United & Prosperous Kiptagich Ward</h1>
-    <p>Join Hon. Duncan Kipngeno Rono in his 2027 aspirant journey</p>
-    <a href="#contact">Get Involved</a>
-  </section>
-
-  <!-- About Section -->
-  <section class="about" id="about">
+  </header>  <!-- Hero -->  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Shaping a United & Prosperous Kiptagich Ward</h1>
+      <p>Join Hon. Duncan Kipngeno Rono in his 2027 aspirant journey</p>
+      <a href="#contact">Get Involved</a>
+    </div>
+  </section>  <!-- About -->  <section class="about" id="about">
     <div class="container">
       <img src="https://via.placeholder.com/400x400" alt="Hon. Duncan Kipngeno Rono">
       <div class="text">
@@ -94,72 +107,61 @@
         </ul>
       </div>
     </div>
-  </section>
-
-  <!-- Vision / Manifesto -->
-  <section id="vision">
-    <div class="container">
-      <h2 style="text-align:center; margin-bottom: 20px;">Vision & Manifesto</h2>
-      <p style="text-align:center; margin-bottom: 30px;">“A united, empowered, and prosperous Kiptagich Ward by 2027.”</p>
-      <div class="manifesto">
-        <div>Infrastructure & Roads</div>
-        <div>Education & Scholarships</div>
-        <div>Healthcare Improvement</div>
-        <div>Youth & Women Empowerment</div>
-        <div>Agriculture & Environment</div>
-      </div>
+  </section>  <!-- Vision & Manifesto -->  <section id="vision" class="container">
+    <h2 style="text-align:center; margin-bottom:20px;">Vision & Manifesto</h2>
+    <p style="text-align:center; margin-bottom:30px;">“A united, empowered, and prosperous Kiptagich Ward by 2027.”</p>
+    <div class="manifesto">
+      <div><i class="fa-solid fa-road"></i><br>Infrastructure & Roads</div>
+      <div><i class="fa-solid fa-graduation-cap"></i><br>Education & Scholarships</div>
+      <div><i class="fa-solid fa-hospital"></i><br>Healthcare Improvement</div>
+      <div><i class="fa-solid fa-people-group"></i><br>Youth & Women Empowerment</div>
+      <div><i class="fa-solid fa-seedling"></i><br>Agriculture & Environment</div>
     </div>
-  </section>
-
-  <!-- Key Priorities -->
-  <section id="priorities">
-    <div class="container">
-      <h2 style="text-align:center; margin-bottom: 30px;">Key Priorities</h2>
-      <div class="priorities">
-        <div class="priority"><strong>Roads & Bridges</strong><br>Improve connectivity and transport</div>
-        <div class="priority"><strong>Schools & Education</strong><br>Support students with resources & bursaries</div>
-        <div class="priority"><strong>Healthcare Services</strong><br>Improve access to clinics and preventive care</div>
-        <div class="priority"><strong>Youth & Women Initiatives</strong><br>Skills training & empowerment programs</div>
-        <div class="priority"><strong>Community Projects</strong><br>Engage citizens in local development</div>
-      </div>
+  </section>  <!-- Key Priorities -->  <section id="priorities" class="container">
+    <h2 style="text-align:center; margin-bottom:30px;">Key Priorities</h2>
+    <div class="priorities">
+      <div class="priority">Roads & Bridges<br>Improve connectivity and transport</div>
+      <div class="priority">Schools & Education<br>Support students with resources & bursaries</div>
+      <div class="priority">Healthcare Services<br>Improve access to clinics and preventive care</div>
+      <div class="priority">Youth & Women Initiatives<br>Skills training & empowerment programs</div>
+      <div class="priority">Community Projects<br>Engage citizens in local development</div>
     </div>
-  </section>
-
-  <!-- Community Engagement -->
-  <section class="engage">
-    <div class="container">
-      <h2>Join Our Campaign</h2>
-      <p>Subscribe to updates or volunteer to support our 2027 vision.</p>
+  </section>  <!-- Gallery -->  <section class="gallery container">
+    <h2 style="text-align:center; margin-bottom:30px;">Community Gallery</h2>
+    <img src="https://via.placeholder.com/300x200" alt="Event 1">
+    <img src="https://via.placeholder.com/300x200" alt="Event 2">
+    <img src="https://via.placeholder.com/300x200" alt="Event 3">
+    <img src="https://via.placeholder.com/300x200" alt="Event 4">
+  </section>  <!-- Testimonials -->  <section class="testimonials container">
+    <h2 style="text-align:center; margin-bottom:30px;">What People Say</h2>
+    <div class="testimonial">“Duncan listens to our needs and works for Kiptagich!” – Resident</div>
+    <div class="testimonial">“A true leader with vision and commitment.” – Community Leader</div>
+  </section>  <!-- Counters -->  <section class="counters">
+    <div class="counter">Projects Completed: 25+</div>
+    <div class="counter">People Helped: 5000+</div>
+    <div class="counter">Schools Supported: 10+</div>
+  </section>  <!-- Community Engagement -->  <section class="engage">
+    <h2>Join Our Campaign</h2>
+    <p>Subscribe to updates or volunteer to support our 2027 vision.</p>
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea placeholder="Your Message"></textarea><br>
+    <button>Submit</button>
+  </section>  <!-- Contact -->  <section id="contact" class="contact container">
+    <div class="contact-info">
+      <h2>Contact & Support</h2>
+      <p>📞 Phone: [Insert]</p>
+      <p>📧 Email: [Insert]</p>
+      <p>📍 Office: Kiptagich Ward</p>
+    </div>
+    <div class="contact-form">
+      <h2>Send a Message</h2>
       <input type="text" placeholder="Your Name"><br>
       <input type="email" placeholder="Your Email"><br>
       <textarea placeholder="Your Message"></textarea><br>
-      <button>Submit</button>
+      <button>Send Message</button>
     </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container contact">
-      <div class="contact-info">
-        <h2>Contact & Support</h2>
-        <p>📞 Phone: [Insert]</p>
-        <p>📧 Email: [Insert]</p>
-        <p>📍 Office: Kiptagich Ward</p>
-      </div>
-      <div class="contact-form">
-        <h2>Send a Message</h2>
-        <input type="text" placeholder="Your Name"><br>
-        <input type="email" placeholder="Your Email"><br>
-        <textarea placeholder="Your Message"></textarea><br>
-        <button>Send Message</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
+  </section>  <!-- Footer -->  <footer>
     <p>© 2026 Hon. Duncan Kipngeno Rono – Aspirant 2027 | Kiptagich Ward</p>
-  </footer>
-
-</body>
+  </footer></body>
   </html>
